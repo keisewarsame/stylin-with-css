@@ -3,22 +3,62 @@
 <html>  
   <head> 
     <title>My Cool Website (test branch)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <style>
       body {
         font-family: 'Courier New', Courier, monospace;
         max-width: 960px;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 1%;
       }
+
       html {
         background-color: #ccc;
+      }
+
+      nav{
+			text-align:center; /* centers the nav */
+		  }   
+		
+		nav ul {
+				list-style:none; /* removes the bullets */
+			}
+		nav ul li
+			{
+				display:inline-block; /* makes horizontal, but able to declare margins */
+				margin:0 2%; /* margin left-right, gets smaller as necessary */
+			}
+		nav a:hover{
+			text-decoration: none;
+		  }	
+
+      footer {
+        text-align: center;
+        clear:both;
       }
     </style>
   </head>
   <body>
-    <h1>My Cool Website</h1>
-    <p>Clever content goes here. If i had more to say, I would say it. No, I mean it, I really have nothing. Come back later. Here is how to use the <strong>strong</strong> tag. Here is how to use the <em>emphasis</em> tag. Here is how to use the <strike>strikethrough</strike> tag. </p> 
-    <p>Clever content goes here</p>
-    <p>My favorite fruit flavors</p>
-    <p>
+    <header>
+      <h1>My Cool Website</h1>
+      <!-- Nav goes here -->
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+        </ul>
+      </nav>
+    </header>
+      <p>Clever content goes here. If i had more to say, I would say it. No, I mean it, I really have nothing. Come back later. Here is how to use the <strong>strong</strong> tag. Here is how to use the <em>emphasis</em> tag. Here is how to use the <strike>strikethrough</strike> tag. </p> 
+      <p>Clever content goes here</p>
+      <p>My favorite fruit flavors</p>
+      <p>
       <ol>
         <li>watermelon</li>
         <li>mango</li>
@@ -53,6 +93,10 @@
         <td>enrique@example.com</td>
       </tr>
     </table>
+
+    <footer>
+        &copy; 2021 My Cool Website
+    </footer>
 
   </body>
 </html>
